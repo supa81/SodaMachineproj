@@ -11,6 +11,8 @@ namespace SodaMachine
         //Member Variables (Has A)
         public Wallet Wallet;  
         public Backpack Backpack;
+        double change;
+        
         
 
         //Constructor (Spawner)
@@ -27,20 +29,31 @@ namespace SodaMachine
         //When all is said and done this method will return a list of coin objects that the customer will use a payment for their soda.
         public List<Coin> GatherCoinsFromWallet(Can selectedCan)
         {
-            
+            System.Console.WriteLine(selectedCan.Price);
+            Console.WriteLine("how many coins would you like to add?" );
+            Console.ReadLine();
+            Wallet.Coins.Count(); 
         }
         //Returns a coin object from the wallet based on the name passed into it.
         //Returns null if no coin can be found
         public Coin GetCoinFromWallet(string coinName)
         {
-            
-            
+            if (Wallet.Coins.Contains(coinName)) 
+            {
+
+            }
+            //gets coins from wallet  if its in wallet 
+            Wallet.Coins.Count();
             
         }
         //Takes in a list of coin objects to add into the customers wallet.
-        public void AddCoinsIntoWallet(List<Coin> coinsToAdd)
+        public Coin AddCoinsIntoWallet(List<Coin> coinsToAdd)
         {
-            
+            if (Wallet.Coins.Count >= 0)
+            {
+                coinsToAdd.Add.
+            }
+           
         }
         //Takes in a can object to add to the customers backpack.
         public void AddCanToBackpack(Can purchasedCan)
