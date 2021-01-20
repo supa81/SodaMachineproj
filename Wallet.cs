@@ -18,7 +18,7 @@ namespace SodaMachine
         }
         //Member Methods (Can Do)
         //Fills wallet with starting money
-        private void FillRegister()
+        private void FillRegister(Penny penny, Nickel nickel, Dime dime, Quarter quarter)
         {
           
         }

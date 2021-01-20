@@ -4,3 +4,7 @@ D:\CodeStuff\SodaMachine\SodaMachine\bin\Debug\SodaMachine.exe
 D:\CodeStuff\SodaMachine\SodaMachine\bin\Debug\SodaMachine.pdb
 D:\CodeStuff\SodaMachine\SodaMachine\obj\Debug\SodaMachine.exe
 D:\CodeStuff\SodaMachine\SodaMachine\obj\Debug\SodaMachine.pdb
+\\Mac\Home\Desktop\SodaMachine_StarterCode\SodaMachine\SodaMachine\obj\Debug\SodaMachine.csprojAssemblyReference.cache
+\\Mac\Home\Desktop\SodaMachine_StarterCode\SodaMachine\SodaMachine\obj\Debug\SodaMachine.csproj.CoreCompileInputs.cache
+\\Mac\Home\Desktop\SodaMachine_StarterCode\SodaMachine\SodaMachine\obj\Debug\SodaMachine.exe
+\\Mac\Home\Desktop\SodaMachine_StarterCode\SodaMachine\SodaMachine\obj\Debug\SodaMachine.pdb

@@ -151,7 +151,7 @@ namespace SodaMachine
         {
             Console.WriteLine(output);
         }
-        //Used for any user prompts that use a yes or now format.
+        //Used for any user prompts that use a yes or no format.
         public static bool ContinuePrompt(string output)
         {
             Console.WriteLine(output);

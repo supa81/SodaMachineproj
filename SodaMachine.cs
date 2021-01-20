@@ -11,9 +11,16 @@ namespace SodaMachine
         //Member Variables (Has A)
         private List<Coin> _register;
         private List<Can> _inventory;
+        Penny penny;
+        Nickel nickel;
+        Dime dime;
+        Quarter quarter;
+        OrangeSoda orangeSoda;
+        Cola cola;
+        RootBeer rootBeer;
 
         //Constructor (Spawner)
-        public SodaMachine()
+        public SodaMachine(OrangeSoda orangeSoda,Cola cola, RootBeer rootBeer)
         {
             _register = new List<Coin>();
             _inventory = new List<Can>();
@@ -26,12 +33,29 @@ namespace SodaMachine
         //A method to fill the sodamachines register with coin objects.
         public void FillRegister()
         {
-           
+            for (int coin = 0; coin < 10; coin ++)
+            {
+                _register.Add(penny);
+                _register.Add(nickel);
+                _register.Add(dime);
+                _register.Add(quarter);
+            }
+            
+           //.add 
+           //for loop to add how many instances
         }
         //A method to fill the sodamachines inventory with soda can objects.
         public void FillInventory()
         {
-            
+            for (int i = 0; i < 20; i++)
+            {
+                // add cans here !!!
+
+                _inventory.Add(orangeSoda);
+                _inventory.Add(cola);
+                _inventory.Add(rootBeer);
+            }
+     
         }
         //Method to be called to start a transaction.
         //Takes in a customer which can be passed freely to which ever method needs it.
@@ -50,12 +74,14 @@ namespace SodaMachine
         //pass payment to the calculate transaction method to finish up the transaction based on the results.
         private void Transaction(Customer customer)
         {
-           
+            //housew all other method calls
+            
         }
         //Gets a soda from the inventory based on the name of the soda.
         private Can GetSodaFromInventory(string nameOfSoda)
         {
-          
+            nameOfSoda.Count();
+            //havwe to check and see if the soda is there by cycling through list with a count???
         }
 
         //This is the main method for calculating the result of the transaction.
@@ -81,7 +107,23 @@ namespace SodaMachine
         //If it does have one, return true.  Else, false.
         private bool RegisterHasCoin(string name)
         {
-           
+
+            if (_register.Contains(penny))
+            {
+                return true;
+            }
+            if (_register.Contains(nickel))
+            {
+                return true;
+            }
+            if (_register.Contains(dime))
+            {
+                return true;
+            }
+            if (_register.Contains(quarter))
+            {
+                return true;
+            }
         }
         //Reusable method to return a coin from the register.
         //Returns null if no coin can be found of that name.
@@ -94,7 +136,7 @@ namespace SodaMachine
         {
             
         }
-        //Takes in a list of coins to returnt he total value of the coins as a double.
+        //Takes in a list of coins to return the total value of the coins as a double.
         private double TotalCoinValue(List<Coin> payment)
         {
            

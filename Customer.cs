@@ -9,8 +9,9 @@ namespace SodaMachine
     class Customer
     {
         //Member Variables (Has A)
-        public Wallet Wallet;
+        public Wallet Wallet;  
         public Backpack Backpack;
+        
 
         //Constructor (Spawner)
         public Customer()
@@ -26,12 +27,14 @@ namespace SodaMachine
         //When all is said and done this method will return a list of coin objects that the customer will use a payment for their soda.
         public List<Coin> GatherCoinsFromWallet(Can selectedCan)
         {
-          
+            
         }
         //Returns a coin object from the wallet based on the name passed into it.
         //Returns null if no coin can be found
         public Coin GetCoinFromWallet(string coinName)
         {
+            
+            
             
         }
         //Takes in a list of coin objects to add into the customers wallet.
