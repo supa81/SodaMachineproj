@@ -12,8 +12,10 @@ namespace SodaMachine
         public Wallet Wallet;  
         public Backpack Backpack;
         double change;
-        
-        
+        Penny penny;
+        Nickel nickel;
+        Dime dime;
+        Quarter quarter; 
 
         //Constructor (Spawner)
         public Customer()
@@ -28,37 +30,56 @@ namespace SodaMachine
         //Will need to get user input for coins they would like to add.
         //When all is said and done this method will return a list of coin objects that the customer will use a payment for their soda.
         public List<Coin> GatherCoinsFromWallet(Can selectedCan)
-        {
-            System.Console.WriteLine(selectedCan.Price);
-            Console.WriteLine("how many coins would you like to add?" );
-            Console.ReadLine();
-            Wallet.Coins.Count(); 
+        {// get coins from wallet based on price of soda 
+            if (selectedCan.Price > Wallet.Coins.Count)
+            {
+                Wallet.Coins.Count();
+            }
+                return null;
         }
         //Returns a coin object from the wallet based on the name passed into it.
         //Returns null if no coin can be found
         public Coin GetCoinFromWallet(string coinName)
-        {
-            if (Wallet.Coins.Contains(coinName)) 
+        {//if my wallet has the coin name i want to return the coin name if not return null
+         //if (coinName = Wallet.Coins.Count(coinName)) 
+         //{
+         //    return penny;
+         //}
+         //return null;
+            for (int i = 0; i < Wallet.Coins.Count(); i++)
             {
-
+                if (coinName == Wallet.Coins[i].Name )
+                {
+                    return Wallet.Coins[i];
+                }
             }
-            //gets coins from wallet  if its in wallet 
-            Wallet.Coins.Count();
-            
-        }
-        //Takes in a list of coin objects to add into the customers wallet.
+            return null;
+        }        
         public Coin AddCoinsIntoWallet(List<Coin> coinsToAdd)
-        {
-            if (Wallet.Coins.Count >= 0)
+        {// list of coins added to wallet 
+            //Takes in a list of coin objects to add into the customers wallet.
             {
-                coinsToAdd.Add.
+                if (Wallet.Coins.Count > 0 )
+                {
+                    coinsToAdd.Add(penny);
+                    coinsToAdd.Add(nickel);
+                    coinsToAdd.Add(dime);
+                    coinsToAdd.Add(quarter);
+                }
+                return null;
+                
+                
             }
            
         }
         //Takes in a can object to add to the customers backpack.
         public void AddCanToBackpack(Can purchasedCan)
-        {
-            
+        {// takes can and puts in bag
+            for (int i = 0; i < 100; i++)
+            {
+                i++;
+            }
+          //Backpack = purchasedCan.Name + Backpack.cans;
         }
     }
 }

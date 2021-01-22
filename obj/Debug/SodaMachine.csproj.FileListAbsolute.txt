@@ -8,3 +8,6 @@ D:\CodeStuff\SodaMachine\SodaMachine\obj\Debug\SodaMachine.pdb
 \\Mac\Home\Desktop\SodaMachine_StarterCode\SodaMachine\SodaMachine\obj\Debug\SodaMachine.csproj.CoreCompileInputs.cache
 \\Mac\Home\Desktop\SodaMachine_StarterCode\SodaMachine\SodaMachine\obj\Debug\SodaMachine.exe
 \\Mac\Home\Desktop\SodaMachine_StarterCode\SodaMachine\SodaMachine\obj\Debug\SodaMachine.pdb
+\\Mac\Home\Desktop\SodaMachine_StarterCode\SodaMachine\SodaMachine\bin\Debug\SodaMachine.exe.config
+\\Mac\Home\Desktop\SodaMachine_StarterCode\SodaMachine\SodaMachine\bin\Debug\SodaMachine.exe
+\\Mac\Home\Desktop\SodaMachine_StarterCode\SodaMachine\SodaMachine\bin\Debug\SodaMachine.pdb
