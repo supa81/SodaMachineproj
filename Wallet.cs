@@ -19,14 +19,40 @@ namespace SodaMachine
         public Wallet()
         {
             Coins = new List<Coin>();
-            FillRegister(penny, nickel, dime, quarter);
+            
         }
         //Member Methods (Can Do)
         //Fills wallet with starting money
 
-        private void FillRegister(Penny penny, Nickel nickel, Dime dime, Quarter quarter)
+        private void FillWallet()
         {
-         
+            for (int coin = 0; coin < 40; coin++)
+            {
+
+                Coins.Add(quarter);
+
+            }
+            for (int coin = 0; coin < 30; coin++)
+            {
+
+                Coins.Add(dime);
+
+            }
+
+            for (int coin = 0; coin < 40; coin++)
+            {
+
+                Coins.Add(nickel);
+
+            }
+
+            for (int coin = 0; coin < 10; coin++)
+            {
+                Coins.Add(penny);
+
+
+            }
+
         }
     }
 }
