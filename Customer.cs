@@ -75,11 +75,8 @@ namespace SodaMachine
         //Takes in a can object to add to the customers backpack.
         public void AddCanToBackpack(Can purchasedCan)
         {// takes can and puts in bag
-            for (int i = 0; i < 100; i++)
-            {
-                i++;
-            }
-          //Backpack = purchasedCan.Name + Backpack.cans;
+
+            Backpack.cans.Add(purchasedCan);
         }
     }
 }
